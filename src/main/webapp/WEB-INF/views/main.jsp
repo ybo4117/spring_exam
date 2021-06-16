@@ -6,8 +6,9 @@
     <title>메인</title>
 </head>
 <body>
+<div>
     <div>
-        <div>
+        <form action="result" method="post">
             연도:
             <select name="deal_year">
                 <c:forEach begin="2000" end="2020" var="year">
@@ -17,8 +18,8 @@
 
             월:
             <select name="deal_month">
-                <c:forEach begin="1" end="12"  var="mon">
-                    <option value="${mon}">${mon}년</option>
+                <c:forEach begin="1" end="12" var="mon">
+                    <option value="${mon}">${mon}월</option>
                 </c:forEach>
             </select>
 
@@ -29,7 +30,8 @@
                 </c:forEach>
             </select>
             <input type="submit" value="검색">
-        </div>
+        </form>
     </div>
+</div>
 </body>
 </html>

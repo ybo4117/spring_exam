@@ -26,6 +26,7 @@ public class KoreaController {
 
     @PostMapping("/result")
     public String result(SearchDTO param) {
+        System.out.println("param" + param);
         service.saveData(param);
         return "redirect:/result";
     }
